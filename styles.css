@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Alexandria&family=Ubuntu&display=swap');
-.carousel-img {
-    height: 400px;
-    object-fit: cover;
+@import url('https://fonts.googleapis.com/css2?family=Alexandria&family=Bebas+Neue&family=Ubuntu&display=swap');
+
+.profile-image {
+    border-radius: 50%;
 }
 
-.caption {
-    font-family: 'Alexandria', sans-serif;
+.icon {
+    font-family: "Bebas Neue";
 }
+
+
