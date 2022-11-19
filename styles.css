@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria&family=Ubuntu&display=swap');
+.carousel-img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.caption {
+    font-family: 'Alexandria', sans-serif;
+}
