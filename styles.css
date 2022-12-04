@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Alexandria&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
 body {
   background-color: #F5F5F5;
+}
+
+.about-section {
+  background-color: #212529;
 }
 
 .parent {
@@ -23,7 +29,6 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
 }
 
 .round {
@@ -36,15 +41,10 @@ body {
 
 .sidebar {
     width: 200px;
-    background-color: #30323D;
+    background-color: #363D45;
     position: fixed;
     height: 100%;
     overflow: auto;
-  }
-  
-  .sidebar h2 {
-    font-family: "Alexandria";
-    color:#E8C547;
   }
 
 
