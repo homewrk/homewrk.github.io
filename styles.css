@@ -3,6 +3,18 @@ body {
   background-color: #F5F5F5;
 }
 
+.parent {
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+
+.child {
+  display: inline-block;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+}
+
 .icons {
   font-size: 50px;
 }
@@ -30,14 +42,12 @@ body {
     overflow: auto;
   }
   
-  /* Sidebar title */
   .sidebar h2 {
     font-family: "Alexandria";
     color:#E8C547;
   }
 
 
-  /* Sidebar links */
   .sidebar a {
     display: block;
     color: #E8C547;
@@ -46,17 +56,14 @@ body {
     font-family: "Alexandria";
   }
   
-  /* Links on mouse-over */
   .sidebar a:hover:not(.active) {
     color: #4D5061;
   }
   
-  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
   div.content {
     margin-left: 200px;
   }
   
-  /* On screens that are less than 700px wide, make the sidebar into a topbar */
   @media screen and (max-width: 700px) {
     .sidebar {
       width: 100%;
@@ -73,8 +80,7 @@ body {
     }
   }
   
-  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 500px) {
     .sidebar a {
       text-align: center;
       float: none;
