@@ -5,6 +5,10 @@ body {
   background-color: #F5F5F5;
 }
 
+.rotate {
+  transform: rotate(90deg);
+}
+
 .about-section {
   background-color: #212529;
 }
