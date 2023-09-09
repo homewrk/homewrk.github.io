@@ -4,308 +4,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joseph Lee</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <img src="img/signature.png" class="center p-2" width="175px" height="auto" alt="">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
-      <!-- <a href="#interests">Interests</a> -->
-      <!-- eventually add awards section -->
-      <div class="row social-links w-50" style="margin-left: 0.5px">
-        <a href="https://github.com/homewrk/" class="link-secondary col-4" style="text-decoration:none;" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/joseph-lee-47b818247/" class="link-secondary col-4" style="text-decoration:none;" target="_blank" rel="noopener noreferrer"> 
-          <i class="bi bi-linkedin"></i>
-        </a>
-        <a href="https://www.instagram.com/lee._.joseph/" class="link-secondary col-4" style="text-decoration:none;" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-instagram "></i>
-        </a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand">Joseph Lee</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#">Skills</a>
+            <a class="nav-link" href="#">Projects & Experience</a>
+          </div>
+        </div>
       </div>
-    </div>
-
+    </nav>
+      <!-- Navbar content -->
+    </nav>
     <!-- Showcase -->
     <div class="content">
-      <section class="about-section text-light p-4" id="about">
+      <section class="about-section p-4" id="about">
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <h1>Hi, my name is <span class="text-warning">Joseph.</span></h1>
-              <p>leejoseph2003@gmail.com</p>
-              <p>(425)442-6621</p>
-              <p>I am a current Freshman here at the University of Washington, interested in pursuing hardware or software related carrers.</p>
-              <div class="p-2 parent">
+              <img src="img/IMG_7945.jpg" alt="coverphoto" class="img-fluid w-50 center round">
+            </div>
+            <div class="col-md-6">
+              <h3 class="section-text complimentary-text">Hey there, my name is</h4>
+              <h1 class="section-text">Joseph Lee</h1>
+              <h3 class="section-text complimentary-text">I'm <span class="typewriter"></span> @ UW.</h3>
+              <div class="p-2 parent section-text">
                 <div class="p-2 child">
-                  <a href="files/resume.pdf" download="Joseph_Lee_Resume" class="btn btn-outline-warning p-2">Download Resume</a>
+                  <a href="files/resume.pdf" download="Joseph_Lee_Resume" class="btn btn-outline-dark btn-rounded">Resume</a>
                 </div>
                 <div class="p-2 child">
-                  <a href="files/portfolio.pdf" download="Joseph_Lee_Portfolio" class="btn btn-outline-warning p-2">Download Portfolio</a>
+                  <a href="files/portfolio.pdf" download="Joseph_Lee_Portfolio" class="btn btn-dark btn-rounded">Portfolio</a>
                 </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <img src="img/IMG_1061.JPEG" alt="" class="img-fluid w-50 center round">
-          </div>
-          </div>
-        </div>
-      </section>
-      <section class="p-4" id="experience">
-        <div class="container">
-          <h1>Work Experience</h1>
-          <!-- add another section within experience about personal projects -->
-          <div class="row">
-            <div class="col-md-6">
-              <h3>UW Formula Motorsports</h3>
-              <h5>Driverless Subteam Member</h5>
-              <p>Part of the Driverless subteam at UW Formula Motorsports, which is responsible for adding driverless functionality to our formula race car.</p>
-              <p>Embedded systems engineer, working with both electronics and software.</p>
-            </div>
-            <div class="col-md-6">
-              <h5>January 2023 - PRESENT</h5>
-            </div>
-          <div class="row">
-            <div class="col-md-6">
-              <h3>QT3 Lab</h3>
-              <h5>Undergraduate Research</h5>
-              <p>Under the supervision of Dr. Parsons, a peer and I are working to implement the pound-drever-hall technique to stabilize the frequency of a laser for a diamond quantum processor.</p>
-              <p>Currently using the Moku:Go, an FPGA from Liquid Instruments, with a PID controller to stabilize the laser.</p>
-            </div>
-            <div class="col-md-6">
-              <h5>January 2023 - PRESENT</h5>
-            </div>
-          <div class="row">
-            <div class="col-md-6">
-              <h3>UNIQLO</h3>
-              <h5>Sales Associate</h5>
-              <p>Helped customers find merchandise and purchase products at UNIQLO. Had to ensure the store is clean and appropriately stocked with merchandise while assisting customers as needed and performing transactions.</p>
-            </div>
-            <div class="col-md-6">
-              <h5>August 2022 - September 2022</h5>
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-md-6">
-              <h3>Agave Cocina & Tequila</h3>
-              <h5>Host</h5>
-              <p>Main responsibilities involved greeting customers as they enter a restaurant and guiding them to their tables and maintaining the waiting list accordingly. Control UberEats, Doordash, Grubhub online orders aswell as over the phone orders. All while still being able to assist various restaurant staff when necessary.</p>
-            </div>
-            <div class="col-md-6">
-              <h5>October 2021 - April 2022</h5>
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-md-6">
-              <h3>CodeKids</h3>
-              <h5>Co-Founder / Instructor</h5>
-              <p>A small tutoring service providing kids from elementary to middle school grades with an introduction to programming and programing concepts. Our curriculum was focused around Scratch and Python. Responsibilities included creating a effective curriculum to keep kids engaged while still being informative, creating a weekly emailing list to parents as well as controlling and handeling payments.</p>
-            </div>
-            <div class="col-md-6">
-              <h5>August 2020 - June 2021</h5>
-            </div>
-          </div>
-            <br>
-            <h1>Extracurricular Experience</h1>
-          <div class="row">
-            <div class="col-md-6">
-              <h3>Current Projects:</h3>
-              <h5>Bazz Fuss Guitar Pedal</h5>
-              <p>Using electronic components and their physical properties in signal manipulation, a fuzz pedal is a surprisingly simple circuit that sounds incredibly cool.</p>
-              <p>References:</p>
-              <ul>
-                <li>http://home-wrecker.com/bazz.html</li>
-                <li>https://guitarpcb.com/wp-content/uploads/2018/07/A-Beginners-Guide-to-Components.pdf</li>
-              </ul>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <h5>Machine Learning and Neural Networks</h5>
-              <p>MNIST, an extensive database and considered as the "Hello World" of machine learning, is an excellent entry point in learning more about how neural networks and machine learning functions. With this, I hope to create a program that can identify human written digits on a 28x28 pixel plane.</p>
-              <p>Written in Python, using TensorFlow as the choice of library.</p>
-              <p>References:</p>
-              <ul>
-                <li>3Blue1Brown's Neural Network Series</li>
-                <li>https://www.tensorflow.org/datasets/keras_example</li>
-              </ul>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <h3>Notable Past Projects:</h3>
-              <h5>CHRONOS</h5>
-              <p>Our award-winning robot ranked 4th in the Pacific Northwest that qualified for FRC worlds in Houston in 2022. Being the Electronics Lead, responsibilities included wiring and troubleshooting of our robot CHRONOS during meetings and competitions.</p>
-            </div>
-            <div class="col-md-6">
-              <div class="row">
-                <div class="col-4">
-                  <img src="img/portfolio photos/chronos1.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-4">
-                  <img src="img/portfolio photos/chronos2.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-4">
-                  <img src="img/portfolio photos/chronos3.jpg" class="img-fluid" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-md-6">
-              <h5>5V Regulator</h5>
-              <p>Comprised of a diode for reverse polarity protection, two 0.10μF cpacitors, a 0.22μF and 10μF capacitor, all to reduce noise from both the input and output, along with a L7805CV linear voltage regulator, this design was both to regulate any DC voltage (less than 35V) to 5V and my entry point in ECAD.</p>
-            </div>
-            <div class="col-md-6">
-              <div class="row">
-                <div class="col-4">
-                  <img src="img/portfolio photos/5vreg1.png" class="img-fluid" alt="">
-                </div>
-                <div class="col-4">
-                  <img src="img/portfolio photos/5vreg2.png" class="img-fluid" alt="">
-                </div>
-                <div class="col-4">
-                  <img src="img/portfolio photos/5vreg3.png" class="img-fluid" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-md-6">
-              <h5>Logic Board Troubleshooting</h5>
-              <p>A water-damaged 2018 Macbook Pro. After being told that this Macbook was being trashed, I decided rather than turning it into electronic waste, I now had the unique oppurtunitiy to learn more about logic boards and how to identify and troubleshoot problems.</p>
-              <p>I extracted the logic board and using a multimeter, identified multiple shorted capacitors, indicated by low resistance on either sides of the capacitor to ground.</p>
-              <p>Without the correct parts, the Macbook is unfixable. However, this logic board served and will continue to serve as a learning tool for me. Future plans will be to practice microsoldering.</p>
-            </div>
-            <div class="col-md-6">
-              <div class="row">
-                <div class="col-6">
-                  <img src="img/portfolio photos/macbook1.jpg" class="img-fluid rotate p-4" alt="">
-                </div>
-                <div class="col-6">
-                  <img src="img/portfolio photos/macbook2.jpg" class="img-fluid rotate p-2" alt="">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-6">
-                  <img src="img/portfolio photos/macbook3.jpg" class="img-fluid rotate p-2" alt="">
-                </div>
-                <div class="col-6">
-                  <img src="img/portfolio photos/macbook4.jpg" class="img-fluid rotate p-2" alt="">
-                </div>          
-              </div>
-            </div>
-          </div>
-          <h5>For a full list of my previous projects, please download my portfolio <a class="text-warning" href="files/portfolio.pdf">here</a></h3>
-        </div>
-      </section>
-      <hr>
-      <section class="p-4" id="education">
-        <div class="container">
-          <h1>Education</h1>
-          <div class="row">
-            <div class="col-md-6">
-              <h3>University of Washington</h2>
-              <h5>Pre-Sciences</h3>
-              <p>Admitted into the University of Washington as a Pre-Sciences student</p>
-              <p>An interest changer, intending to major in ECE or ACMS</p>
-            </div>
-            <div class="col-md-6">
-              <h5>September 2022 - PRESENT</h5>
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-md-6">
-              <h3>Skyline High School</h2>
-              <h5>IBCP Certificate in Computer Science</h3>
-              <p>Relevant Coursework: IB Math HL 2 AA, IB Physics HL 2, IB Computer Science HL</p>
-            </div>
-            <div class="col-md-6">
-              <h5>September 2018 - June 2022</h5>
-            </div>
-          </div>
-        </div>
-      </section>
-      <hr>
-      <section class="p-4" id="skills">
-        <div class="container">
-          <h1>Skills</h1>
-          <div class="row">
-            <div class="col-md-6">
-              <h3>Programming Languages</h3>
-              <div class="icons">
-                <i class="devicon-python-plain-wordmark"></i>
-                <i class="devicon-java-plain-wordmark"></i>
-                <i class="devicon-html5-plain-wordmark"></i>
-                <i class="devicon-css3-plain-wordmark"></i>
-              </div>
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-md-6">
-              <h3>Developer Tools</h3>
-              <div class="icons">
-                <i class="devicon-arduino-plain-wordmark"></i>
-                <i class="devicon-raspberrypi-line"></i>
-                <i class="devicon-vscode-plain"></i>
-                <i class="devicon-git-plain"></i>
-              </div>
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-md-6">
-              <h3>Software</h3>
-              <div class="icons">
-                <img src="img/altium.png" alt="" width="150px" height="auto">
-                <i class="devicon-illustrator-line"></i>
-                <i class="devicon-photoshop-line"></i>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <hr>
-      <!-- <section class="p-4" id="interests">
-        <div class="container">
-          <h1>Interests (WIP)</h1>
-          <div class="row">
-            <div class="col-md-6">
-                <p>Guitar and Piano</p>
-                <p>Film Photography</p>
-                <a href="#photo" class="btn btn-outline-warning p-2">View Photography Gallery (WIP)</a>
-              </div>
-          </div>
-        </div>
-      </section> -->
     </div>
-    <footer>
-      <section class="p-4">
-        <div>
-          <a href="https://github.com/homewrk/" class="me-4 link-secondary" style="text-decoration:none;" target="_blank" rel="noopener noreferrer">
-            <i class="bi bi-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/joseph-lee-47b818247/" class="me-4 link-secondary" style="text-decoration:none;" target="_blank" rel="noopener noreferrer"> 
-            <i class="bi bi-linkedin"></i>
-          </a>
-          <a href="https://www.instagram.com/lee._.joseph/" class="me-4 link-secondary" style="text-decoration:none;" target="_blank" rel="noopener noreferrer">
-            <i class="bi bi-instagram"></i>
-          </a>
-        </div>
-      </section>
-      </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('.typewriter', {
+        strings: ['a student', 'a researcher', 'an engineer'],
+        typeSpeed: 250,
+        backSpeed: 150,
+        loop: true
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
   </body>
 </html>
