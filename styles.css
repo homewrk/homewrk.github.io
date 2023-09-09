@@ -48,21 +48,31 @@ body {
   width: 8rem;
 }
 
-#experience {
-  background-color: #4f5053;
-}
-
-.hidden {
+.hidden-left {
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-100%);
   transition: all 1s;
 }
 
-@media(prefers-reduced-motion) {
-  .hidden {
-    transition: none;
-  }
+.hidden-right {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 1s;
+}
+
+.floating { 
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 15px); }
+  100%   { transform: translate(0, -0px); }   
 }
 
 .show {
@@ -71,3 +81,12 @@ body {
   transform: translateX(0);
 }
 
+.container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
