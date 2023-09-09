@@ -1,6 +1,10 @@
 @font-face { font-family: GilroyBold; src: url('fonts/Gilroy-ExtraBold.otf'); } 
 @font-face { font-family: GilroyLight; src: url('fonts/Gilroy-Light.otf'); } 
 
+* {
+  font-family: 'GilroyLight';
+}
+
 body {
   background-color:white;
 }
@@ -18,7 +22,6 @@ body {
 .section-text {
   align-self: center;
   text-align: center;
-  font-family: 'GilroyLight';
 }
 
 .icons {
@@ -35,23 +38,36 @@ body {
   border-radius: 50%;
 }
 
+.bold {
+  font-family: 'GilroyBold';
+}
+
 .btn-rounded {
   border-radius: 40px;
   padding: 1rem;
   width: 8rem;
-  font-family: 'GilroyBold';
 }
 
-.navbar-brand {
-  font-family: "GilroyLight";
+#experience {
+  background-color: #4f5053;
 }
 
-.nav-link {
-  font-family: "GilroyLight";
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
 }
 
-.container {
-  display: flex;
-  align-items: center;
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
 
