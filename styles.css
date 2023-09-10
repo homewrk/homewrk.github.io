@@ -19,9 +19,19 @@ body {
   color: darkgray;
 }
 
-.section-text {
+.section-center {
   align-self: center;
   text-align: center;
+}
+
+.section-left {
+  align-self: left;
+  text-align: left;
+}
+
+.section-right {
+  align-self: right;
+  text-align: right;
 }
 
 .icons {
@@ -62,17 +72,17 @@ body {
   transition: all 1s;
 }
 
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 15px); }
+  100%   { transform: translate(0, -0px); }   
+}
+
 .floating { 
   animation-name: floating;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-}
-
-@keyframes floating {
-  0% { transform: translate(0,  0px); }
-  50%  { transform: translate(0, 15px); }
-  100%   { transform: translate(0, -0px); }   
 }
 
 .show {
@@ -89,4 +99,19 @@ body {
 img {
   width: 100%;
   height: auto;
+}
+
+.contact-img {
+  width: 100px;
+}
+
+@keyframes expand {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.25); }
+  100% { transform: scale(1); }
+}
+
+.contact-img:hover {
+  animation: expand;
+  animation-duration: 1s;
 }
